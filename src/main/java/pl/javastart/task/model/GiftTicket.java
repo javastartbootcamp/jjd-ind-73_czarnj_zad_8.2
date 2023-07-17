@@ -1,7 +1,7 @@
 package pl.javastart.task.model;
 
 public class GiftTicket extends Ticket {
-    private final static double ADDITIONAL_CHARGE_PERCENTAGE = 0.05;
+    private static final double ADDITIONAL_CHARGE_PERCENTAGE = 0.05;
     private String boxColor;
     private boolean isAutograph;
 

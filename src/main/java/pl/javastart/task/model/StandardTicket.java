@@ -1,7 +1,7 @@
 package pl.javastart.task.model;
 
 public class StandardTicket extends Ticket {
-    private final static double LOGISTICS_COST = 5;
+    private static final double LOGISTICS_COST = 5;
     private Address shippingAddress;
 
     public StandardTicket(String eventName, Address address, String type, double basePrice,

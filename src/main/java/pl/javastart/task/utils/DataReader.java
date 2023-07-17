@@ -8,9 +8,9 @@ import pl.javastart.task.model.StandardTicket;
 import java.util.Scanner;
 
 public class DataReader {
-    private final static String ONLINE_TICKRT_TYPE = "bilet internetowy";
-    private final static String STANDARD_TICKRT_TYPE = "bilet standardowy";
-    private final static String GIFT_TICKRT_TYPE = "bilet prezentowy";
+    private static final String ONLINE_TICKRT_TYPE = "bilet internetowy";
+    private static final String STANDARD_TICKRT_TYPE = "bilet standardowy";
+    private static final String GIFT_TICKRT_TYPE = "bilet prezentowy";
 
     Scanner scanner = new Scanner(System.in);
 
@@ -42,7 +42,6 @@ public class DataReader {
         boolean isAutograph = readIsAutograph();
         return new GiftTicket(eventName, address, GIFT_TICKRT_TYPE, basePrice, discount, boxColor, isAutograph);
     }
-
 
     private String readEventName() {
         System.out.println("Podaj nazwę wydarzenia:");
