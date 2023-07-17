@@ -38,9 +38,11 @@ public class DataReader {
         Address address = readAddress();
         double basePrice = readBasePrice();
         double discount = readDiscount();
+        System.out.println("Dane do wysyłki:");
+        Address shippingAddress = readAddress();
         String boxColor = readBoxColor();
         boolean isAutograph = readIsAutograph();
-        return new GiftTicket(eventName, address, GIFT_TICKRT_TYPE, basePrice, discount, boxColor, isAutograph);
+        return new GiftTicket(eventName, address, GIFT_TICKRT_TYPE, basePrice, discount, shippingAddress, boxColor, isAutograph);
     }
 
     private String readEventName() {
