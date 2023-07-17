@@ -12,7 +12,7 @@ public class DataReader {
     private static final String STANDARD_TICKRT_TYPE = "bilet standardowy";
     private static final String GIFT_TICKRT_TYPE = "bilet prezentowy";
 
-    Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
 
     public OnlineTicket createOnlineTicket() {
         String eventName = readEventName();

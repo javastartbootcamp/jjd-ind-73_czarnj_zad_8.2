@@ -1,13 +1,13 @@
 package pl.javastart.task.model;
 
-public class GiftTicket extends Ticket {
+public class GiftTicket extends StandardTicket {
     private static final double ADDITIONAL_CHARGE_PERCENTAGE = 0.05;
     private String boxColor;
     private boolean isAutograph;
 
     public GiftTicket(String eventName, Address address, String type, double basePrice,
-                      double discount, String boxColor, boolean isAutograph) {
-        super(eventName, address, type, basePrice, discount);
+                      double discount, Address shippingAddress, String boxColor, boolean isAutograph) {
+        super(eventName, address, type, basePrice, discount, shippingAddress);
         this.boxColor = boxColor;
         this.isAutograph = isAutograph;
     }

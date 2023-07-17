@@ -16,7 +16,7 @@ public class Main {
         StandardTicket standardTicket = new StandardTicket("Spektakl Szalone nożyczki", address1,
                 "bilet standardowy", 150, 0.1, address2);
         GiftTicket giftTicket = new GiftTicket("Koncert Oki", address1, "bilet prezentowy",
-                75, 0, "zielony", false);
+                75, 0, address2, "zielony", false);
         System.out.println(onlineTicket.getInfo());
         System.out.println(standardTicket.getInfo());
         System.out.println(giftTicket.getInfo());
